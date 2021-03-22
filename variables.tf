@@ -83,3 +83,8 @@ variable "cf_ipv6_enabled" {
   default = true
   type = bool
 }
+
+variable "existing_s3_bucket_url" {
+  default = ""
+  type = string
+}

@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "main" {
+  count = var.existing_s3_bucket_url != "" ? 0 : 1
   provider = aws.main
   bucket   = var.fqdn
   acl      = "private"
