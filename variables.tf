@@ -88,3 +88,8 @@ variable "existing_s3_bucket_url" {
   default = ""
   type = string
 }
+
+variable "existing_url" {
+  default = ""
+  type = string
+}

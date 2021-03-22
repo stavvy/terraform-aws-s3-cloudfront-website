@@ -64,7 +64,7 @@ resource "aws_cloudfront_distribution" "main" {
     response_page_path    = "/${var.index_document}"
   }
 
-  aliases = var.existing_s3_bucket_url != "" ? [var.existing_s3_bucket_url] : concat([var.fqdn], var.aliases)
+  aliases = var.existing_s3_bucket_url != "" ? [var.existing_url] : concat([var.fqdn], var.aliases)
   
   price_class = var.cloudfront_price_class
 
