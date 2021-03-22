@@ -1,9 +1,9 @@
 output "s3_bucket_id" {
-  value = aws_s3_bucket.main.id
+  value = aws_s3_bucket.main[0].id
 }
 
 output "s3_bucket_arn" {
-  value = aws_s3_bucket.main.arn
+  value = aws_s3_bucket.main[0].arn
 }
 
 output "s3_website_endpoint" {
@@ -14,7 +14,7 @@ output "s3_website_endpoint" {
 }
 
 output "s3_hosted_zone_id" {
-  value = aws_s3_bucket.main.hosted_zone_id
+  value = aws_s3_bucket.main[0].hosted_zone_id
 }
 
 output "cf_domain_name" {
